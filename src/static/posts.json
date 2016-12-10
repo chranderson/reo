@@ -1,0 +1,65 @@
+{
+  "featureId": "003aaa",
+  "data": [
+    {
+      "id": "001aaa",
+      "authorId": "5303d74c64f66366f00cb9b2a94f3251bf5",
+      "title": "See My Setup",
+      "subTitle": "With so many options, how do you configure your setup?.",
+      "contentFormat": "html",
+      "content": "Configuring a new machine is a headache. Getting all of your settings set up the exact same as you had on a previous machine can prove difficult; unless you have dotfiles in your root directory.",
+      "url": "https://chranderson.github.io/portfolio/blog/posts/see-my-setup-001aaa",
+      "canonicalUrl": "http://localhost:3015/posts/see-my-setup",
+      "tags": ["js", "js-fatigue", "setup"],
+      "publishStatus": "unlisted",
+      "publishedAt": 1481208962153,
+      "license": "all-rights-reserved",
+      "licenseUrl": "https://chranderson.github.io/license"
+    },
+    {
+      "id": "002aaa",
+      "authorId": "5303d74c64f66366f00cb9b2a94f3251bf5",
+      "title": "Getting Started with Dotfiles",
+      "subTitle": "Dotfiles are dotfiles are dotfiles. Boring but helpful.",
+      "contentFormat": "html",
+      "content": "<h1>Save time!</h1><p>Dotfiles are dotfiles are dotfiles. Boring but helpful.</p>",
+      "url": "https://chranderson.github.io/portfolio/blog/posts/getting-started-with-dotfiles-002aaa",
+      "canonicalUrl": "http://localhost:3015/posts/getting-started-with-dotfiles",
+      "tags": ["config", "dotfiles", "getting-started"],
+      "publishStatus": "draft",
+      "publishedAt": 0,
+      "license": "all-rights-reserved",
+      "licenseUrl": "https://chranderson.github.io/license"
+    },
+    {
+      "id": "003aaa",
+      "authorId": "5303d74c64f66366f00cb9b2a94f3251bf5",
+      "title": "How To: Organize a Pizza Party",
+      "subTitle": "5 Steps to Set Up the Perfect Pizza Party",
+      "contentFormat": "html",
+      "content": "<h1>5 Steps to Set Up the Most Memorable Pizza Party</h1><p>Step 1. Pick Your Pizza</p>",
+      "url": "https://chranderson.github.io/portfolio/blog/posts/how-to-the-organization-of-a-pizza-party-003aaa",
+      "canonicalUrl": "http://localhost:3015/posts/how-to-the-organization-of-a-pizza-party",
+      "tags": ["organization", "pizza", "party", "how-to", "tutorial"],
+      "publishStatus": "published",
+      "publishedAt": 1481208962153,
+      "license": "all-rights-reserved",
+      "licenseUrl": "https://chranderson.github.io/license"
+    },
+    {
+      "id": "004aad",
+      "authorId": "5303d74c64f66366f00cb9b2a94f3251bf5",
+      "title": "Smart Lighting",
+      "subTitle": "Lighting your home like nature(ish). Your personal wireless lighting that lets you easily control your light from your device and create the right ambience for your every moments.",
+      "contentFormat": "html",
+      "content": "<h1>Lighting that you dont notice.</h1><p>Only light what you need, and use natural light colors and your eyes will thank you.</p>",
+      "url": "https://chranderson.github.io/portfolio/blog/posts/smart-lighting-thoughts-004aaa",
+      "canonicalUrl": "http://localhost:3015/posts/smart-lighting-thoughts",
+      "tags": ["iot", "smart", "lighting", "lights"],
+      "publishStatus": "unlisted",
+      "publishedAt": 1481208962153,
+      "license": "all-rights-reserved",
+      "licenseUrl": "https://chranderson.github.io/license"
+    }
+  ]
+}

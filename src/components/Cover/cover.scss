@@ -1,0 +1,24 @@
+.Cover {
+  box-sizing: border-box;
+  background: rgba(255,255,255,0.5);
+  min-height: 50vh;
+  height: 50vh;
+  width: 100%;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em;
+
+  > img {
+
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+  }
+}
+
+// h1 {
+//   color: white;
+// }

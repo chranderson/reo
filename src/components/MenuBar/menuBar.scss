@@ -1,0 +1,30 @@
+@import '../../style/colors.scss';
+
+.MenuBar {
+  background: lighten($bgColor, 10%);
+  // display: flex;
+  // flex-flow: row nowrap;
+  width: 100%;
+  // align-items: center;
+  // justify-content: center;
+  // margin-top: auto;
+  min-height: 40px;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  @media (min-width: 900px) {
+    padding: 0 2em;
+  }
+
+}
+
+.tabWrap {
+  flex: 1;
+  // border: 1px solid yellow;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  max-width: 1000px;
+}

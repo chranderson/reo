@@ -1,0 +1,26 @@
+@import './style/colors.scss';
+
+html {
+  overflow: hidden;
+  font-size: 16px;
+}
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;;
+  background: $bgColor;
+  color: $fontColor;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  box-sizing: border-box;
+}
