@@ -1,5 +1,5 @@
 import React, { Component, PropTypes } from 'react';
-
+import { Link } from 'react-router';
 import {
   Tab
 } from '../../components';
@@ -83,8 +83,9 @@ export default class MenuBar extends Component {
         <div className="tabWrap">
           {this.renderTabs(selectedTab, options)}
         </div>
-        <div className="menuIcon"
-             onClick={this.goHome}/>
+        <Link to={'/'}>
+          <div className="menuIcon" />
+        </Link>
       </div>
     );
   }

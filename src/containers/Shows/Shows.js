@@ -5,9 +5,9 @@ import React, {
 // import { connect } from 'react-redux';
 // import * as aboutActionCreators from '../../redux/reducers/Shows/about';
 
-// import {
-//   VideoBg
-// } from '../../components';
+import {
+  Page
+} from '../../components';
 
 // import {
   //
@@ -34,15 +34,11 @@ export default class Shows extends Component {
     // } = this.props;
 
     // const {} = this.state;
-    const style = {
-      border: '1px solid blue',
-      padding: '2em'
-    };
 
     return (
-      <div style={style}>
+      <Page title={'Shows'}>
         Shows
-      </div>
+      </Page>
     );
   }
 }

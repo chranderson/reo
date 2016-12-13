@@ -1,6 +1,8 @@
 @import '../../style/colors.scss';
 
 .Tab {
+  font-family: 'Roboto', sans-serif;
+  font-style: 700i;
   height: 40px;
   // flex: 1;
   display: flex;
@@ -26,7 +28,7 @@
     color: white;
     transition: opacity 0.3s, transform 0.3s ease-in;
     opacity: 0.2;
-    padding: 1em;
+    padding: 1em 0;
   }
 
   &:hover {

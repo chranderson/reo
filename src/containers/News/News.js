@@ -5,9 +5,9 @@ import React, {
 // import { connect } from 'react-redux';
 // import * as aboutActionCreators from '../../redux/reducers/News/about';
 
-// import {
-//   VideoBg
-// } from '../../components';
+import {
+  Page
+} from '../../components';
 
 // import {
   //
@@ -34,15 +34,12 @@ export default class News extends Component {
     // } = this.props;
 
     // const {} = this.state;
-    const style = {
-      border: '1px solid yellow',
-      padding: '2em'
-    };
 
     return (
-      <div style={style}>
+      <Page title="News">
         News
-      </div>
+
+      </Page>
     );
   }
 }

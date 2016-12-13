@@ -5,9 +5,9 @@ import React, {
 // import { connect } from 'react-redux';
 // import * as aboutActionCreators from '../../redux/reducers/Music/about';
 
-// import {
-//   VideoBg
-// } from '../../components';
+import {
+  Page
+} from '../../components';
 
 // import {
   //
@@ -34,15 +34,11 @@ export default class Music extends Component {
     // } = this.props;
 
     // const {} = this.state;
-    const style = {
-      border: '1px solid purple',
-      padding: '2em'
-    };
 
     return (
-      <div style={style}>
+      <Page title={'Music'}>
         Music
-      </div>
+      </Page>
     );
   }
 }
