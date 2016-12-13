@@ -1,8 +1,13 @@
 {
-  "main.css": "static/css/main.ab54766c.css",
-  "main.css.map": "static/css/main.ab54766c.css.map",
-  "main.js": "static/js/main.e672f6e0.js",
-  "main.js.map": "static/js/main.e672f6e0.js.map",
+  "main.css": "static/css/main.345466b4.css",
+  "main.css.map": "static/css/main.345466b4.css.map",
+  "main.js": "static/js/main.5e68fcfd.js",
+  "main.js.map": "static/js/main.5e68fcfd.js.map",
+  "static/media/email.gif": "static/media/email.095c7bdd.gif",
+  "static/media/facebook.gif": "static/media/facebook.065e7567.gif",
+  "static/media/instagram.gif": "static/media/instagram.4a920204.gif",
   "static/media/pizza.gif": "static/media/pizza.99a0dd8b.gif",
-  "static/media/superMoonMtnPeak.jpg": "static/media/superMoonMtnPeak.204475b1.jpg"
+  "static/media/soundcloud.gif": "static/media/soundcloud.7e37defa.gif",
+  "static/media/superMoonMtnPeak.jpg": "static/media/superMoonMtnPeak.204475b1.jpg",
+  "static/media/twitter.gif": "static/media/twitter.a42701bb.gif"
 }
