@@ -35,7 +35,7 @@ export default class About extends Component {
     welcomeMsg: PropTypes.string,
   }
   static defaultProps = {
-    welcomeMsg: 'Hello! I am Emily Reo. I am an audio/visual artist and producer stationed in Brooklyn. On tour playing in SAD13. Currently recording a new album.'
+    welcomeMsg: 'I am an audio/visual artist and producer stationed in Brooklyn. On tour playing in SAD13. Currently recording a new album.'
   }
 
   renderLinks() {
@@ -60,6 +60,7 @@ export default class About extends Component {
       flexFlow: 'column nowrap',
       justifyContent: 'center',
       border: '1px solid white',
+      alignSelf: 'flex-start',
       margin: '1em 0',
     }
 
@@ -71,13 +72,16 @@ export default class About extends Component {
     return (
       <Page title="About">
         <span style={messageStyle}>
+          Hello! I am Emily Reo.
+        </span>
+        <span style={messageStyle}>
           { welcomeMsg }
         </span>
         <span style={{...messageStyle, margin: '1em 0'}}>
-          Say Hi
+          Say Hi!
         </span>
 
-        <div style={{linkWrap}}>
+        <div style={linkWrap}>
           {this.renderLinks()}
         </div>
       </Page>

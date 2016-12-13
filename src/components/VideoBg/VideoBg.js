@@ -22,7 +22,9 @@ export default class VideoBg extends Component {
       },
       mute: false,
     };
-    // this.function = this.function.bind(this);
+    this._onReady = this._onReady.bind(this);
+    this._onEnd = this._onEnd.bind(this);
+    this._toggleCover = this._toggleCover.bind(this);
   }
 
   componentDidMount() {
@@ -41,21 +43,43 @@ export default class VideoBg extends Component {
 
   _onReady(event) {
     console.log('event.target: ', event.target);
+    // console.log('event.type: ', event.type);
+    // console.log('synthEvent: ', synthEvent);
     // event.target.mute();
     // access to player in all event handlers via event.target
+
+    // this.setState({
+    //   mute: false
+    // });
+    // const playVid = () => event.target.playVideo();
+    // setTimeout(playVid, 4000);
+
+  }
+
+  _onEnd(event) {
+    console.log('event: ', event);
+
+    event.target.destroy()
+    // this.setState({
+    //   mute: true
+    // });
   }
 
 
-  _toggleCover = () => {
-    // console.log('toggleCover: ', event.target);
-    // event.target.mute();
+  _toggleCover(event) {
+    const player = this.refs.video.internalPlayer;
+
+    if (this.state.mute) {
+      player.unMute();
+    } else {
+      player.mute();
+    }
     this.setState({
       mute: !this.state.mute,
     });
   }
 
   render() {
-  // const styles = require('VideoBG.scss');
 
     const {
       videoId
@@ -70,10 +94,13 @@ export default class VideoBg extends Component {
      height: size.height,
      width: size.width,
      playerVars: { // https://developers.google.com/youtube/player_parameters
-       autoplay: 1,
+       autoplay: 0,
        controls: 0,
        iv_load_policy: 3,
        showinfo: 0,
+       enablejsapi: 1,
+       fs: 0,
+       modestbranding: 0,
      }
    };
 
@@ -89,10 +116,11 @@ export default class VideoBg extends Component {
                    videoId={videoId}
                    opts={opts}
                    onReady={this._onReady}
+                   onEnd={this._onEnd}
                    />
         : null
       }
-        <div style={{ ...style.videoCover, opacity: mute ? 0.8 : 0 }} />
+        <div style={{ ...style.videoCover, opacity: mute ? 0.5 : 0, transform: mute ? 'translateY(0)' : 'translateY(-100%)' }} />
         <div onClick={ this._toggleCover } style={ style.control }>
           { mute ? 'unmute' : 'mute'}
         </div>

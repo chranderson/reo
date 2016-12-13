@@ -2,7 +2,7 @@ import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
 
 import {
-  Link
+  // Link
 } from '../../components';
 
 import {
@@ -48,22 +48,29 @@ export default class App extends Component {
 
   render() {
 
-    const {
-      scrollUp,
-    } = this.state;
+    // const {
+      // scrollUp,
+    // } = this.state;
+
+    const contentStyle = {
+      // border: '1px solid white',
+      position: 'relative',
+    };
 
     return (
       <div style={style.app} onWheel={this.handleWheel}>
         <Landing />
         <Menu />
-        {
+        { /*
           scrollUp
           ? <Link id="viewCode"
                   url={'https://github.com/chranderson/reo'}
                   title={'view code'} />
           : null
-        }
-        {this.props.children}
+        */ }
+        <div style={contentStyle}>
+          {this.props.children}
+        </div>
       </div>
     )
   }

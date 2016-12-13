@@ -11,7 +11,6 @@ const styles = {
     display: 'flex',
     textIndent: -9999,
     overflow: 'hidden',
-
     // opacity: 0.8,
   },
 };

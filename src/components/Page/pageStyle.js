@@ -11,10 +11,12 @@ const styles = {
     padding: '1em',
     maxWidth: '80%',
 
+    // border: '1px solid yellow',
     minHeight: 400,
     minWidth: '400px',
     fontSize: 20,
     textTransform: 'uppercase',
+    // marginBottom: 100,
   },
 };
 

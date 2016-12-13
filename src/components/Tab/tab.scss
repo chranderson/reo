@@ -16,10 +16,10 @@
   cursor: pointer;
   // opacity: 0.8;
   // color: inherit;
-  transition: color 0.25s ease;
+  // transition: color 0.25s ease;
   user-select: none;
 
-  transition: opacity 0.3s, transform 0.3s ease;
+  transition: opacity 0.3s, transform 0.3s, color 0.3s ease;
 
   > a {
     display: flex;
@@ -29,12 +29,14 @@
     transition: opacity 0.3s, transform 0.3s ease-in;
     opacity: 0.2;
     padding: 1em 0;
+    // transform: skewX(155deg);
   }
 
   &:hover {
     > a {
       opacity: 1;
       transform: translateY(-2px);
+      text-shadow: 0 1px 4px rgba(0,0,0,0.3);
     }
   }
   &:active {

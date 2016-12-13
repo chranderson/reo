@@ -37,12 +37,12 @@ $glow: rgba(255,255,255,0.9);
   }
 }
 .closed {
-  transform: translateY(-50%);
+  transform: translateY(-30%);
 }
 
 .open {
   transform: tranlateY(0);
-  background: linear-gradient(0deg, transparent 60%, rgba(0,0,0,0.6));
+  background: linear-gradient(0deg, transparent 65%, rgba(0,0,0,0.3));
 }
 
 .tabWrap {
@@ -72,6 +72,6 @@ $glow: rgba(255,255,255,0.9);
   transform: scale(0.9);
   &:hover {
     transform: scale(1);
-    box-shadow: 0 0 8px -1px $glow;
+    // box-shadow: 0 0 8px -1px $glow;
   }
 }

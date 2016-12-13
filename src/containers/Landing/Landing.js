@@ -24,18 +24,21 @@ export default class Landing extends Component {
   static propTypes = {
     time: PropTypes.string,
   }
-  // static defaultProps = {}
+  static defaultProps = {
+    yolo: false
+  }
 
   render() {
 
-    // const {
-      // time
-    // } = this.props;
+    const {
+      // time,
+      yolo
+    } = this.props;
 
     // const {} = this.state;
 
     return (
-      <VideoBg videoId={'tfbIVD7H2P8'} />
+      <VideoBg videoId={yolo ? 'bX1NLuJrPZg' : 'tfbIVD7H2P8'} />
     );
   }
 }
