@@ -51,8 +51,8 @@ export default class VideoBg extends Component {
     // this.setState({
     //   mute: false
     // });
-    // const playVid = () => event.target.playVideo();
-    // setTimeout(playVid, 4000);
+    const playVid = () => event.target.playVideo();
+    setTimeout(playVid, 4000);
 
   }
 
