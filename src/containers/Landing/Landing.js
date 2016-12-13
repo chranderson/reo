@@ -35,10 +35,7 @@ export default class Landing extends Component {
     // const {} = this.state;
 
     return (
-      <div>
-        Landing
-        <VideoBg videoId={'NFTaiWInZ44'} />
-      </div>
+      <VideoBg videoId={'tfbIVD7H2P8'} />
     );
   }
 }

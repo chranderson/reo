@@ -1,6 +1,7 @@
 const style = {
   videoBg: {
-    position: 'fixed',
+    position: 'absolute',
+    zIndex: -10,
     top: 0,
     right: 0,
     bottom: 0,
@@ -18,13 +19,14 @@ const style = {
 
   control:  {
     position: 'fixed',
-    top: 20,
+    zIndex: 100,
+    bottom: 20,
     left: 20,
     borderRadius: '50%',
     height: 50,
     width: 50,
     boxShadow: '0 1px 3px 2px rgba(0,0,0,0.2)',
-    background: 'rgba(255,255,255,0.2)',
+    background: 'rgba(255,255,255,0.1)',
     cursor: 'pointer',
     display: 'flex',
     flexFlow: 'row nowrap',

@@ -6,7 +6,8 @@ import {
 } from '../../components';
 
 import {
-  Landing
+  Landing,
+  Menu
 } from '../../containers';
 
 // import styles - inline
@@ -53,6 +54,8 @@ export default class App extends Component {
 
     return (
       <div style={style.app} onWheel={this.handleWheel}>
+        <Landing />
+        <Menu />
         {
           scrollUp
           ? <Link id="viewCode"
@@ -60,7 +63,7 @@ export default class App extends Component {
                   title={'view code'} />
           : null
         }
-        <Landing />
+        {this.props.children}
       </div>
     )
   }

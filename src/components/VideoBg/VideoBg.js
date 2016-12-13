@@ -20,7 +20,7 @@ export default class VideoBg extends Component {
         height: null,
         width: null
       },
-      mute: true,
+      mute: false,
     };
     // this.function = this.function.bind(this);
   }
@@ -41,6 +41,7 @@ export default class VideoBg extends Component {
 
   _onReady(event) {
     console.log('event.target: ', event.target);
+    // event.target.mute();
     // access to player in all event handlers via event.target
   }
 

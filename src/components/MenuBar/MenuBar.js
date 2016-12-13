@@ -4,7 +4,6 @@ import {
   Tab
 } from '../../components';
 
-
 import './menuBar.scss';
 
 export default class MenuBar extends Component {
@@ -15,19 +14,28 @@ export default class MenuBar extends Component {
   }
 
   static defaultProps = {
-    options: [
-      { name: 'home' },
-      { name: 'redux' },
-      { name: 'style' },
-    ],
+    options: [],
   }
 
   constructor() {
     super();
     this.state = {
-      selectedTab: ''
+      selectedTab: '',
+      showMenu: false
     };
+    this.handleHover = this.handleHover.bind(this);
     this.handleTabClick = this.handleTabClick.bind(this);
+  }
+
+  goHome = () => {
+    console.log('Link to home');
+  }
+
+  handleHover(event) {
+    // console.log('event type: ', event.type);
+    this.setState({
+      showMenu: event.type === 'mouseenter'
+    });
   }
 
   handleTabClick(clickedTab: string) {
@@ -39,15 +47,18 @@ export default class MenuBar extends Component {
   }
 
   renderTabs(selectedTab: string, tabs: Array<Object>) {
+    // console.log('tabs: ', tabs);
     return tabs.map((tab, index) => {
       return <Tab key={index}
-                  selected={tab.name === selectedTab}
-                  tabName={tab.name}
+                  selected={tab === selectedTab}
+                  tabName={tab}
                   handleClick={this.handleTabClick}
-                  link={tab.link} />;
+                  leftSlash={index === 0}
+                  />;
     });
 
   }
+
 
   render() {
 
@@ -56,14 +67,24 @@ export default class MenuBar extends Component {
     } = this.props;
 
     const {
-      selectedTab
+      selectedTab,
+      showMenu
     } = this.state;
 
+    let menuBarStyle = 'MenuBar';
+      menuBarStyle += showMenu
+                    ? ' open'
+                    : ' closed'
+
     return (
-      <div className="MenuBar">
+      <div className={menuBarStyle}
+           onMouseEnter={this.handleHover}
+           onMouseLeave={this.handleHover}>
         <div className="tabWrap">
           {this.renderTabs(selectedTab, options)}
         </div>
+        <div className="menuIcon"
+             onClick={this.goHome}/>
       </div>
     );
   }
